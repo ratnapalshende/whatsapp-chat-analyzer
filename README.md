@@ -61,7 +61,7 @@ Features include total messages, words, media, and links shared, message timelin
 
 Ratnapal Shende - [Linkedin](https://in.linkedin.com/in/ratnapalshende) - Ratnapalshende2001@gmail.com
 
-Distributed under the XYZ license. See ``LICENSE`` for more information.
+Distributed under the Apache 2.0 license. See ``LICENSE`` for more information.
 
 [https://github.com/RatnapalHacker](https://github.com/RatnapalHacker)
 ## Contribution

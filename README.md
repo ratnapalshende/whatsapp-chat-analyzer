@@ -63,7 +63,7 @@ Ratnapal Shende - [Linkedin](https://in.linkedin.com/in/ratnapalshende) - Ratnap
 
 Distributed under the XYZ license. See ``LICENSE`` for more information.
 
-[https://github.com/RatnapalHacker/whatsapp-chat-analyser.git](https://github.com/RatnapalHacker)
+[https://github.com/RatnapalHacker](https://github.com/RatnapalHacker)
 ## Contribution
 
 Contributions are welcome! Follow these steps to contribute:

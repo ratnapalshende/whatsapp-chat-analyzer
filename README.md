@@ -57,6 +57,10 @@ Features include total messages, words, media, and links shared, message timelin
 4. View the analysis:
    - Explore overall chat statistics and user-specific insights using the sidebar.
 
+## Live App
+
+You can access the deployed app [whatsapp chat analyzer](https://wachatanalyzer.streamlit.app/).
+
 ## Meta
 
 Ratnapal Shende - [Linkedin](https://in.linkedin.com/in/ratnapalshende) - Ratnapalshende2001@gmail.com

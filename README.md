@@ -59,7 +59,7 @@ Features include total messages, words, media, and links shared, message timelin
 
 ## Live App
 
-You can access the deployed app [whatsapp chat analyzer](https://wachatanalyzer.streamlit.app/).
+You can access the deployed app here [whatsapp chat analyzer](https://wachatanalyzer.streamlit.app/).
 
 ## Meta
 

@@ -138,7 +138,7 @@ if uploded_file is not None:
         # most common words
         st.header("Most Common Words")
         most_common_df = helper.most_common_words(selected_user, df)
-        if most_common_df.empty:
+        if(not most_common_df.empty):
             fig, ax = plt.subplots()
             ax.barh(most_common_df['word'],most_common_df['count'],color='green')
             plt.xlabel('Count')

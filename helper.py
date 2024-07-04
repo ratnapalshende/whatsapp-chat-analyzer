@@ -135,7 +135,7 @@ def most_common_words(selected_user, df) -> pd.DataFrame:
     # Create a Counter for the words in the messages
     word_counts = Counter(" ".join(df).split())
     counter_as_tuple = word_counts.most_common(20)
-    print(f"[DEBUG] {counter_as_tuple}")
+    #print(f"[DEBUG] {counter_as_tuple}")
     if counter_as_tuple:
         word, count = zip(*counter_as_tuple)
         most_common_df = pd.DataFrame({'word':word, "count":count})

@@ -27,7 +27,7 @@ Features include total messages, words, media, and links shared, message timelin
 2. Create a virtual environment:
     ```bash
     python -m venv env
-    source env/bin/activate  # On Windows use `env\Scripts\activate`
+    source env/bin/activate  # On Windows use `env/Scripts/activate`
     ```
 
 3. Install the required packages:

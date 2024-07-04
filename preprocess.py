@@ -6,6 +6,14 @@ The `preprocess` function takes a string of WhatsApp chat data as input,
 extracts the dates, users, and messages, and returns a pandas DataFrame'''
 import re
 import pandas as pd
+from dateutil import parser
+
+def convert_to_datetime(datetime_str):
+    # Remove the trailing '-' character
+    datetime_str = datetime_str.rstrip(' -')
+    # Use dateutil parser to parse the datetime string
+    datetime_obj = parser.parse(datetime_str)
+    return pd.to_datetime(datetime_obj)
 
 def preprocess(data:str) -> pd.DataFrame:
     '''Cleaning and preprocessing data'''
@@ -32,7 +40,8 @@ def preprocess(data:str) -> pd.DataFrame:
     # converting data into dataFrame
     df = pd.DataFrame({'date':dates, 'user':users,'message':filter_messages})
     # converting string into datetime object
-    df['date'] = pd.to_datetime(df['date'], format='%d/%m/%y, %I:%M %p -')
+    #df['date'] = pd.to_datetime(df['date'], format='%d/%m/%y, %I:%M %p -')
+    df['date']= df['date'].apply(convert_to_datetime)
     # seprating year column
     df['year'] = df['date'].dt.year
     # seperating month

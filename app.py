@@ -61,7 +61,7 @@ if uploded_file is not None:
         # timeline analysis
         st.title("Timeline of Messages")
         timeline = helper.monthly_timeline(selected_user, df)
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize=(17,8))
         ax.plot(timeline['time'],timeline['message'])
         plt.xticks(rotation="vertical")
         plt.xlabel('month-year')
@@ -72,7 +72,7 @@ if uploded_file is not None:
         # daily timeline analysis
         st.title("Daily Timeline of Messages")
         daily_timeline = helper.daily_timeline(selected_user, df)
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize=(17,10))
         ax.plot(daily_timeline['only_date'],daily_timeline['message'],color="purple")
         plt.xticks(rotation="vertical")
         plt.xlabel('date')
@@ -139,8 +139,15 @@ if uploded_file is not None:
         st.header("Most Common Words")
         most_common_df = helper.most_common_words(selected_user, df)
         if(not most_common_df.empty):
+            # Sort the DataFrame in descending order by 'count'
+            most_common_df = most_common_df.sort_values(by='count', ascending=True)
             fig, ax = plt.subplots()
-            ax.barh(most_common_df['word'],most_common_df['count'],color='green')
+            # Set the tick parameters with custom font sizes
+            ax.tick_params(axis='x', labelsize=15)
+            ax.tick_params(axis='y', labelsize=15)
+            # Generate a list of colors (you can customize this list)
+            colors = plt.cm.viridis(np.linspace(0, 1, len(timeline['time'])))
+            ax.barh(most_common_df['word'],most_common_df['count'],color=colors)
             plt.xlabel('Count')
             plt.ylabel('Words')
             plt.title('Most common words')

@@ -20,7 +20,7 @@ Features include total messages, words, media, and links shared, message timelin
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/RatnapalHacker/whatsapp-chat-analyzer.git
+    git clone https://github.com/RatnapalShende/whatsapp-chat-analyzer.git
     cd whatsapp-chat-analyzer
     ```
 
@@ -67,7 +67,7 @@ Ratnapal Shende - [Linkedin](https://in.linkedin.com/in/ratnapalshende) - Ratnap
 
 Distributed under the Apache 2.0 license. See ``LICENSE`` for more information.
 
-[https://github.com/RatnapalHacker](https://github.com/RatnapalHacker)
+[https://github.com/RatnapalShende](https://github.com/RatnapalShende)
 ## Contribution
 
 Contributions are welcome! Follow these steps to contribute:
